@@ -1,0 +1,33 @@
+[debug] [2023-01-10T07:35:32.801Z] ----------------------------------------------------------------------
+[debug] [2023-01-10T07:35:32.804Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ManojSaravanan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-01-10T07:35:32.805Z] CLI Version:   11.20.0
+[debug] [2023-01-10T07:35:32.805Z] Platform:      win32
+[debug] [2023-01-10T07:35:32.805Z] Node Version:  v18.12.1
+[debug] [2023-01-10T07:35:32.807Z] Time:          Tue Jan 10 2023 13:05:32 GMT+0530 (India Standard Time)
+[debug] [2023-01-10T07:35:32.807Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-10T07:35:32.975Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-10T07:35:32.976Z] > authorizing via signed-in user (manojsharvan98@gmail.com)
+[debug] [2023-01-10T07:35:32.976Z] [iam] checking project netflix-clone-3cd96 for permissions ["firebase.projects.get"]
+[debug] [2023-01-10T07:35:32.980Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3cd96:testIamPermissions [none]
+[debug] [2023-01-10T07:35:32.981Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3cd96:testIamPermissions x-goog-quota-user=projects/netflix-clone-3cd96
+[debug] [2023-01-10T07:35:32.981Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3cd96:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-10T07:35:34.717Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3cd96:testIamPermissions 200
+[debug] [2023-01-10T07:35:34.718Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-3cd96:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-01-10T07:35:34.720Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96 [none]
+[debug] [2023-01-10T07:35:35.553Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96 200
+[debug] [2023-01-10T07:35:35.553Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96 {"projectId":"netflix-clone-3cd96","projectNumber":"309337890908","displayName":"Netflix-clone","name":"projects/netflix-clone-3cd96","resources":{"hostingSite":"netflix-clone-3cd96"},"state":"ACTIVE","etag":"1_b557c8b5-d34a-4b91-9d59-a57ec46cbe24"}
+[info] 
+[info] === Serving from 'D:\Practice\netflix'...
+[info] 
+[debug] [2023-01-10T07:35:35.569Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-clone-3cd96/sites 
+[debug] [2023-01-10T07:35:36.944Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-clone-3cd96/sites 200
+[debug] [2023-01-10T07:35:36.944Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/netflix-clone-3cd96/sites {"sites":[{"name":"projects/netflix-clone-3cd96/sites/netflix-clone-3cd96","defaultUrl":"https://netflix-clone-3cd96.web.app","appId":"1:309337890908:web:cb13f2bfeb35fc2f234699","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-10T07:35:36.945Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96/webApps/1:309337890908:web:cb13f2bfeb35fc2f234699/config [none]
+[debug] [2023-01-10T07:35:38.452Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96/webApps/1:309337890908:web:cb13f2bfeb35fc2f234699/config 200
+[debug] [2023-01-10T07:35:38.452Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96/webApps/1:309337890908:web:cb13f2bfeb35fc2f234699/config {"projectId":"netflix-clone-3cd96","appId":"1:309337890908:web:cb13f2bfeb35fc2f234699","storageBucket":"netflix-clone-3cd96.appspot.com","apiKey":"AIzaSyAI7QikQLX9Q7ET1OWOCnCoP0UfyvIID6M","authDomain":"netflix-clone-3cd96.firebaseapp.com","messagingSenderId":"309337890908"}
+[debug] [2023-01-10T07:35:38.460Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96 [none]
+[debug] [2023-01-10T07:35:39.111Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96 200
+[debug] [2023-01-10T07:35:39.111Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-3cd96 {"projectId":"netflix-clone-3cd96","projectNumber":"309337890908","displayName":"Netflix-clone","name":"projects/netflix-clone-3cd96","resources":{"hostingSite":"netflix-clone-3cd96"},"state":"ACTIVE","etag":"1_b557c8b5-d34a-4b91-9d59-a57ec46cbe24"}
+[info] i  hosting[netflix-clone-3cd96]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[netflix-clone-3cd96]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
